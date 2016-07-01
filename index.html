@@ -47,7 +47,10 @@
 			<!-- suspended data -->
 	        <textarea class="suspended-input" rows="4" cols="50">Suspended data</textarea><br/>
 	        <button class="suspended-bt" data-cmi="suspend_data" data-action="setValue">Enviar</button><br/><br/><br/><br/>      
-			
+			<div>
+				<input type="checkbox" name="unload" id="unload"><label for="unload">unload</label><br/>
+				<input type="checkbox" name="beforeunload" id="beforeunload"><label for="beforeunload">beforeunload</label><br/>
+			</div><br/>
 			<!-- exit -->
 			<button class="exit-bt" data-cmi="core.exit" data-action="setValue">Set exit</button> <select  class="exit-input">
 					<option value="suspend" selected="selected">suspend</option>

@@ -11,8 +11,7 @@ $(function() {
 		$bts = $('button[data-action="setValue"]'),
 		$values = $('#savedValue #values');
 
-	var setValue = function(attr, value){
-		debugger;
+	var setValue = function(attr, value){		
 		doLMSSetValue("cmi." + attr, value);
 	}	
 
@@ -39,4 +38,25 @@ $(function() {
 			$values.append('<p>' + varsToLoad[i] + ': ' + value + '</p>')
 		}		
 	})();
+
+
+	$(window).on({
+		unload: function(){
+			var check = $('#unload').prop('checked');			
+
+			if(check){				
+				doLMSCommit();
+				doLMSFinish();
+			}
+		},
+
+		beforeunload: function(){
+			var check = $('#beforeunload').prop('checked');			
+
+			if(check){				
+				doLMSCommit();
+				doLMSFinish();
+			}
+		}
+	});
 });
