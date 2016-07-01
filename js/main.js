@@ -2,7 +2,7 @@ $(function() {
 	var posicao = 0,
 		finalizado = false,
 		lessonStatus = "incomplete",
-		$bts = $('button');
+		$bts = $('button.setValue');
 
 	var setValue = function(attr, value){
 		debugger;

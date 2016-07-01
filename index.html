@@ -30,10 +30,10 @@
 			<p id="nome"></p>
 			
 			<!-- position -->
-			<button class="position-bt" data-cmi="core.lesson_location">Set position</button> <input type="text" class="position-input"> <br/><br/>
+			<button class="setValue position-bt" data-cmi="core.lesson_location">Set position</button> <input type="text" class="position-input"> <br/><br/>
 			
 			<!-- score -->
-			<button class="status-bt" data-cmi="core.lesson_status">Set status</button> 
+			<button class="setValue status-bt" data-cmi="core.lesson_status">Set status</button> 
 				<select  class="status-input">
 					<option value="completed">completed</option>
 					<option value="incomplete">incomplete</option>
@@ -42,11 +42,11 @@
 				</select> <br/><br/>
 			
 			<!-- status -->
-			<button class="score-bt" data-cmi="core.score.raw">Set score</button> <input type="text" class="score-input"> <br/>
+			<button class="setValue score-bt" data-cmi="core.score.raw">Set score</button> <input type="text" class="score-input"> <br/>
 	        
 			<!-- suspended data -->
 	        <textarea class="suspended-input" rows="4" cols="50">Suspended data</textarea><br/>
-	        <button class="suspended-bt" data-cmi="suspend_data">Enviar</button><br/><br/><br/><br/>      
+	        <button class="setValue suspended-bt" data-cmi="suspend_data">Enviar</button><br/><br/><br/><br/>      
 			
 			<!-- exit -->
 			<button class="exit-bt" data-cmi="core.exit">Set exit</button> <input type="text" class="exit-input"> <br/><br/>
@@ -54,7 +54,7 @@
 			<button onclick="doLMSFinish()">doLMSFinish</button><br/><br/>
 		</div>	
 		<div class="wrapper">
-		
+
 		</div>
 	
 		<script src="./js/main.js"></script>
