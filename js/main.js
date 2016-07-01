@@ -2,7 +2,14 @@ $(function() {
 	var posicao = 0,
 		finalizado = false,
 		lessonStatus = "incomplete",
-		$bts = $('button.setValue');
+		varsToLoad = [
+			"cmi.suspend_data",
+			"cmi.core.score.raw",
+			"cmi.core.student_id",
+			"cmi.core.lesson_status"			
+		],
+		$bts = $('button.setValue'),
+		$values = $('#savedValue #values');
 
 	var setValue = function(attr, value){
 		debugger;
@@ -25,12 +32,10 @@ $(function() {
 	(function(){
  		doLMSInitialize();
 		startTimer();
-		respostasGravadas = doLMSGetValue( "cmi.suspend_data" );
-		score = doLMSGetValue( "cmi.core.score.raw" );
-		idAluno = doLMSGetValue( "cmi.core.student_id" );
-		lessonStatus = doLMSGetValue("cmi.core.lesson_status");
-		if(lessonStatus != "completed"){
-			doLMSSetValue("cmi.core.lesson_status","incomplete");
-		};
+
+		for (var i = 0; i < varsToLoad.length; i++) {
+			value = doLMSGetValue(varsToLoad[i]);
+			$values.append('<p>' + varsToLoad[i] + ': ' + value + '</p>')
+		}		
 	})();
 });
