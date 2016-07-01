@@ -37,27 +37,27 @@
       <file href="APIWrapper.js" />
       <file href="SCOFunctions.js" />
     </resource>
-    <resource identifier="RES-01" type="webcontent" adlcp:scormtype="sco" href="index.html">
+    <resource identifier="RES-02" type="webcontent" adlcp:scormtype="sco" href="index.html">
       <file href="index.html" />
       <file href="APIWrapper.js" />
       <file href="SCOFunctions.js" />
     </resource>
-    <resource identifier="RES-01" type="webcontent" adlcp:scormtype="sco" href="index.html">
+    <resource identifier="RES-03" type="webcontent" adlcp:scormtype="sco" href="index.html">
       <file href="index.html" />
       <file href="APIWrapper.js" />
       <file href="SCOFunctions.js" />
     </resource>
-    <resource identifier="RES-01" type="webcontent" adlcp:scormtype="sco" href="index.html">
+    <resource identifier="RES-04" type="webcontent" adlcp:scormtype="sco" href="index.html">
       <file href="index.html" />
       <file href="APIWrapper.js" />
       <file href="SCOFunctions.js" />
     </resource>
-    <resource identifier="RES-01" type="webcontent" adlcp:scormtype="sco" href="index.html">
+    <resource identifier="RES-05" type="webcontent" adlcp:scormtype="sco" href="index.html">
       <file href="index.html" />
       <file href="APIWrapper.js" />
       <file href="SCOFunctions.js" />
     </resource>
-    <resource identifier="RES-01" type="webcontent" adlcp:scormtype="sco" href="index.html">
+    <resource identifier="RES-06" type="webcontent" adlcp:scormtype="sco" href="index.html">
       <file href="index.html" />
       <file href="APIWrapper.js" />
       <file href="SCOFunctions.js" />
