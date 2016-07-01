@@ -1,0 +1,54 @@
+<html> 
+	<head> 
+		<title>Curso de Educação a Distância</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta http-equiv="pragma" content="no-cache">
+		<meta  http-equiv="expires" content="0">
+	
+		<script src="APIWrapper.js"></script>
+		<script src="SCOFunctions.js"></script>
+		<script src="bower_components/jquery/jquery.min.js"></script>
+
+		<style type="text/css"> 
+			body { 
+				margin-left: 20px; 
+				margin-top: 20px; 
+				margin-right: 0px; 
+				margin-bottom: 0px; 
+				background-color: #FFFFFF; 
+			}
+		</style>
+	</head> 
+	<body onUnload="javascript:finaliza();">		
+    	
+		<h3>Conteúdo</h3>
+		<p id="nome"></p>
+		
+		<!-- position -->
+		<button class="position-bt" data-cmi="core.lesson_location">Set position</button> <input type="text" class="position-input"> <br/><br/>
+		
+		<!-- score -->
+		<button class="status-bt" data-cmi="core.lesson_status">Set status</button> 
+			<select  class="status-input">
+				<option value="completed">completed</option>
+				<option value="incomplete">incomplete</option>
+				<option value="passed">passed</option>
+				<option value="failed">failed</option>
+			</select> <br/><br/>
+		
+		<!-- status -->
+		<button class="score-bt" data-cmi="core.score.raw">Set score</button> <input type="text" class="score-input"> <br/>
+        
+		<!-- suspended data -->
+        <textarea class="suspended-input" rows="4" cols="50">Suspended data</textarea><br/>
+        <button class="suspended-bt" data-cmi="suspend_data">Enviar</button><br/><br/><br/><br/>      
+		
+		<!-- exit -->
+		<button class="exit-bt" data-cmi="core.exit">Set position</button> <input type="text" class="exit-input"> <br/><br/>
+		<button onclick="doLMSCommit()">doLMSCommit</button><br/><br/>
+		<button onclick="doLMSFinish()">doLMSFinish</button><br/><br/>
+		
+
+		<script src="./js/main.js"></script>
+	</body> 
+</html> 

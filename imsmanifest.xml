@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--This is a Reload version 2.0.2 SCORM 1.2 Content Package document-->
+<!--Spawned from the Reload Content Package Generator - http://www.reload.ac.uk-->
+<manifest xmlns="http://www.imsproject.org/xsd/imscp_rootv1p1p2" xmlns:imsmd="http://www.imsglobal.org/xsd/imsmd_rootv1p2p1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:adlcp="http://www.adlnet.org/xsd/adlcp_rootv1p2" identifier="MANIFEST-545173C3-75E3-18D5-376D-A97D3F384281" xsi:schemaLocation="http://www.imsproject.org/xsd/imscp_rootv1p1p2 imscp_rootv1p1p2.xsd http://www.imsglobal.org/xsd/imsmd_rootv1p2p1 imsmd_rootv1p2p1.xsd http://www.adlnet.org/xsd/adlcp_rootv1p2 adlcp_rootv1p2.xsd">
+  <organizations default="ORG-01">
+    <organization identifier="ORG-01" structure="hierarchical">
+      <title>Teste</title>
+      <item identifier="ITEM-01" isvisible="true" identifierref="RES-01">
+        <title>SCO 1</title>
+      </item>
+      <item identifier="ITEM-02" isvisible="true" identifierref="RES-02">
+        <title>SCO 2</title>
+        <adlcp:prerequisites type="aicc_script">ITEM-01</adlcp:prerequisites>
+        <adlcp:timelimitaction />
+      </item>
+      <item identifier="ITEM-03" isvisible="true" identifierref="RES-03">
+        <title>SCO 3</title>
+        <adlcp:prerequisites type="aicc_script">ITEM-02</adlcp:prerequisites>
+      </item>
+      <item identifier="ITEM-04" isvisible="true" identifierref="RES-04">
+        <title>SCO 4</title>
+        <adlcp:prerequisites type="aicc_script">ITEM-03</adlcp:prerequisites>
+      </item>
+      <item identifier="ITEM-05" isvisible="true" identifierref="RES-05">
+        <title>SCO 5</title>
+        <adlcp:prerequisites type="aicc_script">ITEM-04</adlcp:prerequisites>
+      </item>
+      <item identifier="ITEM-06" isvisible="true" identifierref="RES-06">
+        <title>SCO 6</title>
+        <adlcp:prerequisites type="aicc_script">ITEM-05</adlcp:prerequisites>
+      </item>
+    </organization>
+  </organizations>
+  <resources>
+    <resource identifier="RES-01" type="webcontent" adlcp:scormtype="sco" href="index1.html">
+      <file href="index1.html" />
+      <file href="APIWrapper.js" />
+      <file href="SCOFunctions.js" />
+    </resource>
+    <resource identifier="RES-02" type="webcontent" adlcp:scormtype="sco" href="index2.html">
+      <file href="index2.html" />
+      <file href="APIWrapper.js" />
+      <file href="SCOFunctions.js" />
+    </resource>
+    <resource identifier="RES-03" type="webcontent" adlcp:scormtype="sco" href="index3.html">
+      <file href="index3.html" />
+      <file href="APIWrapper.js" />
+      <file href="SCOFunctions.js" />
+    </resource>
+    <resource identifier="RES-04" type="webcontent" adlcp:scormtype="sco" href="index4.html">
+      <file href="index4.html" />
+      <file href="APIWrapper.js" />
+      <file href="SCOFunctions.js" />
+    </resource>
+    <resource identifier="RES-05" type="webcontent" adlcp:scormtype="sco" href="index5.html">
+      <file href="index5.html" />
+      <file href="APIWrapper.js" />
+      <file href="SCOFunctions.js" />
+    </resource>
+    <resource identifier="RES-06" type="webcontent" adlcp:scormtype="sco" href="index6.html">
+      <file href="index6.html" />
+      <file href="APIWrapper.js" />
+      <file href="SCOFunctions.js" />
+    </resource>
+  </resources>
+</manifest>
+
