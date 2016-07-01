@@ -32,33 +32,33 @@
     </organization>
   </organizations>
   <resources>
-    <resource identifier="RES-01" type="webcontent" adlcp:scormtype="sco" href="index1.html">
-      <file href="index1.html" />
+    <resource identifier="RES-01" type="webcontent" adlcp:scormtype="sco" href="index.html">
+      <file href="index.html" />
       <file href="APIWrapper.js" />
       <file href="SCOFunctions.js" />
     </resource>
-    <resource identifier="RES-02" type="webcontent" adlcp:scormtype="sco" href="index2.html">
-      <file href="index2.html" />
+    <resource identifier="RES-01" type="webcontent" adlcp:scormtype="sco" href="index.html">
+      <file href="index.html" />
       <file href="APIWrapper.js" />
       <file href="SCOFunctions.js" />
     </resource>
-    <resource identifier="RES-03" type="webcontent" adlcp:scormtype="sco" href="index3.html">
-      <file href="index3.html" />
+    <resource identifier="RES-01" type="webcontent" adlcp:scormtype="sco" href="index.html">
+      <file href="index.html" />
       <file href="APIWrapper.js" />
       <file href="SCOFunctions.js" />
     </resource>
-    <resource identifier="RES-04" type="webcontent" adlcp:scormtype="sco" href="index4.html">
-      <file href="index4.html" />
+    <resource identifier="RES-01" type="webcontent" adlcp:scormtype="sco" href="index.html">
+      <file href="index.html" />
       <file href="APIWrapper.js" />
       <file href="SCOFunctions.js" />
     </resource>
-    <resource identifier="RES-05" type="webcontent" adlcp:scormtype="sco" href="index5.html">
-      <file href="index5.html" />
+    <resource identifier="RES-01" type="webcontent" adlcp:scormtype="sco" href="index.html">
+      <file href="index.html" />
       <file href="APIWrapper.js" />
       <file href="SCOFunctions.js" />
     </resource>
-    <resource identifier="RES-06" type="webcontent" adlcp:scormtype="sco" href="index6.html">
-      <file href="index6.html" />
+    <resource identifier="RES-01" type="webcontent" adlcp:scormtype="sco" href="index.html">
+      <file href="index.html" />
       <file href="APIWrapper.js" />
       <file href="SCOFunctions.js" />
     </resource>
