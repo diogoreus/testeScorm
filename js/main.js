@@ -8,7 +8,7 @@ $(function() {
 			"cmi.core.student_id",
 			"cmi.core.lesson_status"			
 		],
-		$bts = $('button.setValue'),
+		$bts = $('button[data-action="setValue"]'),
 		$values = $('#savedValue #values');
 
 	var setValue = function(attr, value){
@@ -25,6 +25,7 @@ $(function() {
 				$input = $('.' + attr + '-input'),
 				value = $input.val();
 
+			console.log($bt, $input)
 			setValue(cmi, value);
 		}
 	});	

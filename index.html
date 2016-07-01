@@ -30,27 +30,27 @@
 			<p id="nome"></p>
 			
 			<!-- position -->
-			<button class="setValue position-bt" data-cmi="core.lesson_location">Set position</button> <input type="text" class="position-input"> <br/><br/>
+			<button class="position-bt" data-cmi="core.lesson_location" data-action="setValue">Set position</button> <input type="text" class="position-input"> <br/><br/>
 			
-			<!-- score -->
-			<button class="setValue status-bt" data-cmi="core.lesson_status">Set status</button> 
-				<select  class="status-input">
+			<!-- status -->
+			<button class="status-bt" data-cmi="core.lesson_status" data-action="setValue">Set status</button> 
+				<select class="status-input">
 					<option value="completed">completed</option>
-					<option value="incomplete">incomplete</option>
+					<option value="incomplete" selected="selected">incomplete</option>
 					<option value="passed">passed</option>
 					<option value="failed">failed</option>
 				</select> <br/><br/>
 			
-			<!-- status -->
-			<button class="setValue score-bt" data-cmi="core.score.raw">Set score</button> <input type="text" class="score-input"> <br/>
+			<!-- score -->
+			<button class="score-bt" data-cmi="core.score.raw" data-action="setValue">Set score</button> <input type="text" class="score-input"> <br/>
 	        
 			<!-- suspended data -->
 	        <textarea class="suspended-input" rows="4" cols="50">Suspended data</textarea><br/>
-	        <button class="setValue suspended-bt" data-cmi="suspend_data">Enviar</button><br/><br/><br/><br/>      
+	        <button class="suspended-bt" data-cmi="suspend_data" data-action="setValue">Enviar</button><br/><br/><br/><br/>      
 			
 			<!-- exit -->
-			<button class="exit-bt" data-cmi="core.exit">Set exit</button> <select  class="exit-input">
-					<option value="suspend">suspend</option>
+			<button class="exit-bt" data-cmi="core.exit" data-action="setValue">Set exit</button> <select  class="exit-input">
+					<option value="suspend" selected="selected">suspend</option>
 					<option value="normal">normal</option>
 					<option value="logout">logout</option>
 					<option value=""></option>
