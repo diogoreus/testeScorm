@@ -17,38 +17,46 @@
 				margin-bottom: 0px; 
 				background-color: #FFFFFF; 
 			}
+
+			.wrapper{
+				width: 50%;
+				float: left;
+			}
 		</style>
 	</head> 
-	<body onUnload="javascript:finaliza();">		
-    	
-		<h3>Conteúdo</h3>
-		<p id="nome"></p>
+	<body>		
+    	<div class="wrapper">
+			<h3>Conteúdo</h3>
+			<p id="nome"></p>
+			
+			<!-- position -->
+			<button class="position-bt" data-cmi="core.lesson_location">Set position</button> <input type="text" class="position-input"> <br/><br/>
+			
+			<!-- score -->
+			<button class="status-bt" data-cmi="core.lesson_status">Set status</button> 
+				<select  class="status-input">
+					<option value="completed">completed</option>
+					<option value="incomplete">incomplete</option>
+					<option value="passed">passed</option>
+					<option value="failed">failed</option>
+				</select> <br/><br/>
+			
+			<!-- status -->
+			<button class="score-bt" data-cmi="core.score.raw">Set score</button> <input type="text" class="score-input"> <br/>
+	        
+			<!-- suspended data -->
+	        <textarea class="suspended-input" rows="4" cols="50">Suspended data</textarea><br/>
+	        <button class="suspended-bt" data-cmi="suspend_data">Enviar</button><br/><br/><br/><br/>      
+			
+			<!-- exit -->
+			<button class="exit-bt" data-cmi="core.exit">Set exit</button> <input type="text" class="exit-input"> <br/><br/>
+			<button onclick="doLMSCommit()">doLMSCommit</button><br/><br/>
+			<button onclick="doLMSFinish()">doLMSFinish</button><br/><br/>
+		</div>	
+		<div class="wrapper">
 		
-		<!-- position -->
-		<button class="position-bt" data-cmi="core.lesson_location">Set position</button> <input type="text" class="position-input"> <br/><br/>
-		
-		<!-- score -->
-		<button class="status-bt" data-cmi="core.lesson_status">Set status</button> 
-			<select  class="status-input">
-				<option value="completed">completed</option>
-				<option value="incomplete">incomplete</option>
-				<option value="passed">passed</option>
-				<option value="failed">failed</option>
-			</select> <br/><br/>
-		
-		<!-- status -->
-		<button class="score-bt" data-cmi="core.score.raw">Set score</button> <input type="text" class="score-input"> <br/>
-        
-		<!-- suspended data -->
-        <textarea class="suspended-input" rows="4" cols="50">Suspended data</textarea><br/>
-        <button class="suspended-bt" data-cmi="suspend_data">Enviar</button><br/><br/><br/><br/>      
-		
-		<!-- exit -->
-		<button class="exit-bt" data-cmi="core.exit">Set position</button> <input type="text" class="exit-input"> <br/><br/>
-		<button onclick="doLMSCommit()">doLMSCommit</button><br/><br/>
-		<button onclick="doLMSFinish()">doLMSFinish</button><br/><br/>
-		
-
+		</div>
+	
 		<script src="./js/main.js"></script>
 	</body> 
 </html> 

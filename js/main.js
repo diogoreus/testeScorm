@@ -6,7 +6,7 @@ $(function() {
 
 	var setValue = function(attr, value){
 		debugger;
-		doLMSSetValue("cmi." + attr, attr);
+		doLMSSetValue("cmi." + attr, value);
 	}	
 
 	$bts.on({
